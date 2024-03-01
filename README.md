@@ -4,10 +4,11 @@ Repository with java-backend interview questions and answers
 
 1. Java
     - [Core](./java/core.md)
-    - [Collections](./java/collections.md)
+    - [Collection framework](./java/collections.md)
     - [Concurrency](./java/concurrency.md)
     - [JVM](./java/jvm.md)
     - [Exceptions](./java/exceptions.md)
+    - [Stream API](./java/stream.md)
 1. [Spring](./spring/spring.md)
 1. Databases
    - [ORM](./database/orm.md)

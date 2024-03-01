@@ -11,4 +11,13 @@
 </details>
 
 >#### What is deadlock, race conditions.
+<details>
+<summary>Answer</summary>
 
+</details>
+
+> #### What is ExecutorService?
+<details>
+<summary>Answer</summary>
+
+</details>
