@@ -15,4 +15,18 @@ Repository with java-backend interview questions and answers
 1. Architecture
    - [Design patterns](./architecture/patterns.md)
 
+   
+> [!IMPORTANT]
+> Feel free to add your questions, edit answers, edit any content.
+> If you want to add a question-answer, please follow next pattern:
+
+```
+   > #### Your question goes here
+   <details>
+      <summary>Answer</summary>
+      Your answer goes here
+   </details>
+```
+
+
 

@@ -1,5 +1,8 @@
-[Оглавление](../README.md)
+[Main page](../README.md)
 
 # Spring
 
-### 1.	Differences between dependency injection (DI) and inversion of control (IoT)
+>#### Differences between dependency injection (DI) and inversion of control (IoT)
+<details>
+    <summary>Answer</summary>
+</details>
