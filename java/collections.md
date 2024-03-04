@@ -76,4 +76,21 @@ Steps for `get()`:
 3. Go to the index of the array and compare the first element’s key with the given key. If both are equals then return 
 the value, otherwise, check for the next element if it exists.
 
+Improvements in Java 8
+
+In Java 8, HashMap replaces the linked list with another useful data structure i.e. binary tree on breaching a certain 
+threshold, which is known as TREEIFY_THRESHOLD. Once this threshold is reached the linked list of Entries is converted 
+to the TreeNodes which reduces the time complexity from O(n) to O(log(n)).
+
+TreeNodes are nothing but the structures supporting the binary trees which have two nodes, smaller node goes to the left 
+and the larger to the right. Whenever we want to search for any key the whole left or right subtree is discarded with 
+a single check. This is how the time complexity is reduced to O(log(n). This change has lead to a significant improvement of HashMap.
+
+Once the number of entries is decreased due to removal or resizing of HashMap, the structure is converted back to the older implementation which is LinkedList.
+
+</details>
+
+> ### How does `HashSet` work?
+<details>
+<summary>Answer</summary>
 </details>

@@ -25,9 +25,38 @@ implement interface Autocloseable. Example: FileReader
 
 </details>
 
-> #### What is functional interface? 
+> #### What is inner (static) classes?
 <details>
 <summary>Answer</summary>
+
+[Inner static class example](../src/main/java/interview/java/core/InnerStatic.java)
+[Inner non-static class example](../src/main/java/interview/java/core/InnerNonStatic.java)
+
+</details>
+
+> #### What is diamond problem? Why they introduced default methods in an interface?
+<details>
+<summary>Answer</summary>
+
+Diamond problem occurs upon multiple inheritance, when two or more parent classes have the same method signature.
+Can be solved by switching to interfaces
+
+</details>
+
+> #### Why are not `List<Integer>` and `List<Number>` covariant?
+<details>
+<summary>Answer</summary>
+</details>
+
+> #### Why are `Number[]` and `Integer[]` covariant?
+<details>
+<summary>Answer</summary>
+</details>
+
+> #### Why is type erasure?
+<details>
+<summary>Answer</summary>
+
 
 </details>
 
