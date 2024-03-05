@@ -93,4 +93,57 @@ Once the number of entries is decreased due to removal or resizing of HashMap, t
 > ### How does `HashSet` work?
 <details>
 <summary>Answer</summary>
+
+HashSet implements interface `Set<T>` so it stores only unique objects.
+Internally it uses `HashMap<T, Object>`. So internally it works as a `HashMap<K,V>`.
+
+[Example](../src/main/java/interview/java/core/collections/HashSetExample.java)
+
 </details>
+
+> #### What method `put(key)` of HashMap returns?
+<details>
+<summary>Answer</summary>
+
+It returns previous value that was binded to that key, or null if there was nothing.
+
+</details>
+
+> #### What is the default size of the load factor in the hashing-based collection?
+<details>
+<summary>Answer</summary>
+
+</details>
+
+> #### Explain these terms in context of a HashMap: hashing, capacity, threshold, rehashing, collision
+<details>
+<summary>Answer</summary>
+
+Capacity is the number of buckets in the HashMap. The initial capacity is the capacity at the time the Map is created. 
+Finally, the default initial capacity of the HashMap is 16.
+
+The load factor is the measure that decides when to increase the capacity of the Map. The default load factor is 75% of the capacity.
+
+The threshold of a HashMap is approximately the product of current capacity and load factor.
+
+Rehashing is the process of re-calculating the hash code of already stored entries. Simply put, when the number of 
+entries in the hash table exceeds the threshold, the Map is rehashed so that it has approximately twice the number of buckets as before.
+
+HashMap works on the principle of hashing — an algorithm to map object data to some representative integer value.
+</details>
+
+> #### What is TreeMap? Differentiate TreeMap from HashMap.
+<details>
+<summary>Answer</summary>
+
+
+</details>
+
+> #### What is TreeSet?
+<details>
+<summary>Answer</summary>
+
+</details>
+
+
+
