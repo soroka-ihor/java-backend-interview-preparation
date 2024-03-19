@@ -3,12 +3,12 @@ package interview.codingproblems;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BracketBalanceCheck {
+public class Problems {
     private static final String BRACKETS = "(){}[]";
 
     public static void main(String[] args) {
-        BracketBalanceCheck bracketBalanceCheck = new BracketBalanceCheck();
-        System.out.println(bracketBalanceCheck.check("{}(("));
+        Problems problems = new Problems();
+        System.out.println(problems.check("{}(("));
     }
     // Problem Description: Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’, determine if
     // the input string is valid. An input string is valid if open brackets are closed by the same type of brackets and
@@ -30,5 +30,13 @@ public class BracketBalanceCheck {
             }
         }
         return true;
+    }
+
+    public void nonCrossingIntervals() {
+        int[][] array = {
+                {1, 3}, {4, 6}, {5, 8}, {12, 17}, {20, 23}, {6, 9}, {22, 25}, {13, 15}
+        };
+        // need to find list of non-crossing intervals
+        // output must be {1, 9}, {12, 17}, {20, 25}
     }
 }

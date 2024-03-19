@@ -2,7 +2,24 @@
 
 # Concurrency
 
-> ### Explain `synchronized` methods work.
+> ### What is `wait()` `notify()` and `notifyAll()`?
+<details>
+<summary>Answer</summary>
+
+These are final method of the class Object. Method wait() makes a thread be waiting until the thread gets notified.
+
+Method notify() tells that the occupied object is available for processing. The choice of the thread to wake depends on 
+the OS implementation of thread management. 
+
+Method notifyAll() notifies all threads that the object is available.
+
+Notify and notifyAll must be called in synchronized block
+
+[WaitNotifyTest](../src/main/java/interview/java/concurrency/WaitNotifyTest.java)
+
+</details>
+
+> #### Explain `synchronized` methods work.
 <details>
 <summary>Answer</summary>
 
@@ -15,7 +32,6 @@ race condition.
 
 </details>
 
->#### Explain mutex, monitor, semaphore
 
 >#### Explain keyword ‘volatile’.
 <details>
