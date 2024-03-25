@@ -49,3 +49,59 @@ race condition.
 <summary>Answer</summary>
 
 </details>
+
+> #### What is interrupt?
+<details>
+<summary>Answer</summary>
+
+Interrupt is a method in the class Thread. It sets the boolean variable `interrupted` to `true`.
+
+</details>
+
+> #### Which states of a threads exists?
+<details>
+<summary>Answer</summary>
+
+NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED
+
+</details>
+
+> #### What is the difference between a thread and a process?
+<details>
+<summary>Answer</summary>
+
+The difference is that process might contain itself a few threads. Also that threads use one memory scope.
+
+</details>
+
+> #### How to stop a thread?
+<details>
+<summary>Answer</summary>
+
+Call the `interrupt()` method. Even though it leads to a thread to be stopped, but it doesn't stops a thread itself. 
+It just sets variable `interrupted` of the class `Thread` to `true`. In a good practice we should run while
+currentThread is not interrupted.
+
+</details>
+
+> #### What is ThreadLocal in java?
+<details>
+<summary>Answer</summary>
+
+The Java ThreadLocal class enables you to create variables that can only be read and written by the same thread. 
+Thus, even if two threads are executing the same code, and the code has a reference to the same ThreadLocal 
+variable, the two threads cannot see each other's ThreadLocal variables. 
+Thus, the Java ThreadLocal class provides a simple way to make code thread safe that would not otherwise be so.
+
+[Example](../src/main/java/interview/java/concurrency/threadlocal/Runner.java)
+
+</details>
+
+> #### What are differences between methods `sleep()` and `yield()`?
+<details>
+<summary>Answer</summary>
+
+Sleep pauses immediately a thread for a particular amount of milliseconds, while yield just wants to pause
+its a thread's execution to give a chance for the remaining threads with the same priority.
+
+</details>

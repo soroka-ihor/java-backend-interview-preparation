@@ -60,4 +60,21 @@ Can be solved by switching to interfaces
 
 </details>
 
+
+> ### Does implementation of Integer have hashcode method?
+<details>
+<summary>Answer</summary>
+
+Yes, it has, but it returns just its int value.
+
+</details>
+
+> ### Does implementation of Long have hashcode method?
+<details>
+<summary>Answer</summary>
+
+Yes, it has. It makes bitwise shift to the left for 32 bits, than it makes XOR operation with the initial value
+
+</details>
+
 [to content](#java-core)

@@ -6,9 +6,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class App {
 
@@ -17,8 +21,14 @@ public class App {
     // Find index of X-th occurrence of A/B
 
     public static void main(String[] args) {
-        String n = "12 3333333333333333333333333333333333333333333333333333333";
-        validateFirstLine(n);
+        List<String> it = Stream.generate(() -> UUID.randomUUID().toString())
+                .limit(2)
+                .collect(Collectors.toList());
+        Iterator<String> iterator = it.iterator();
+
+        iterator.next();
+        iterator.next();
+        iterator.next();
     }
 
     public static void process() {
